@@ -1,0 +1,2 @@
+# GxAnyPluginExample
+GxAny plugin example.
