@@ -33,8 +33,8 @@ int main(int argc, char *args[])
 
     GANY_IMPORT_MODULE(TestPlug);
 
-    auto tStudent = GEnv["Plug.Student"];
-    auto tClassroom = GEnv["Plug.Classroom"];
+    auto tStudent = GAny::Import("Plug.Student");
+    auto tClassroom = GAny::Import("Plug.Classroom");
 
     auto classroom = tClassroom();
 

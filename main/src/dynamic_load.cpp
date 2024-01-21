@@ -32,8 +32,8 @@ int main(int argc, char *args[])
     // Load dynamic plug
     loadPlugin("test-plug/TestPlug");
 
-    auto tStudent = GEnv["Plug.Student"];
-    auto tClassroom = GEnv["Plug.Classroom"];
+    auto tStudent = GAny::Import("Plug.Student");
+    auto tClassroom = GAny::Import("Plug.Classroom");
 
     auto classroom = tClassroom();
 
